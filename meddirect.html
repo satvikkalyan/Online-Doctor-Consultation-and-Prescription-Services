@@ -1,0 +1,70 @@
+
+<html>
+    <head>
+        <style>
+            body  {
+    background-image: url("welcome.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:1400px 600px;
+}
+.button {
+  font: bold 15px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 10px 14px 10px 14px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+.button2 {
+  font: bold 14px Arial;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: #333333;
+  padding: 15px 23px 15px 23px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+input[type=submit] {
+    width: 7em;  height: 3em;
+    font: bold 15px Arial;
+    background-color:#4CAF50
+}
+        </style>
+    </head>
+    <body>
+        <form action="meddirect.php" method="POST">
+        <table border="0">
+            <tr>
+                <td width="200"></td>
+                <td width="240" height="200"></td>
+                <td width="290"></td>
+                <td width="300" style="text-align:center">Select a Disease from the Drop box</td>
+            </tr>
+            <tr><td></td>
+                <td style="font: bold 20px Arial;text-align:center">Disease Name:</td>
+                <td><select id="selectdis" name="selectdis" style="width:150">
+        <option id="selectdis" name="selectdis" value="A">dis1</option>
+	<option id="selectdis" name="selectdis" value="B">dis2</option>
+	<option id="selectdis" name="selectdis" value="C">dis3</option>
+	<option id="selectdis" name="selectdis" value="D">dis4</option>
+ 	<option id="selectdis" name="selectdis" value="E">dis5</option>
+	<option id="selectdis" name="selectdis" value="F">dis6</option>
+ 	<option id="selectdis" name="selectdis" value="G">dis7</option>
+	<option id="selectdis" name="selectdis" value="H">dis8</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td height="200"><a href='userprof.php' class='button'>back</a></td><td colspan=2 style="text-align:center"><input type="submit" value="next"></td></tr></table>
+         
+        </form>
+    </body>
+</html>
+

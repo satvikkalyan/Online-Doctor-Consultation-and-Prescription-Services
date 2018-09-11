@@ -1,0 +1,76 @@
+
+<html>
+    <head>
+        <title>Login Page</title>
+        <script>
+        
+       // document.getElementById("p1").innerHTML="Enter UserName and Password";
+       window.onload = function(){
+    document.getElementById("p1").innerHTML="Wrong Username or Password";
+}
+        </script>
+        <style>
+                  body  {
+    background-image: url("welcome.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:1400px 600px;
+}
+.button2 {
+  font: italics 30px New Times Roman;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  
+  padding: 8px 13px 8px 13px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+.button3 {
+  font: bold 18px Arial;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: #333333;
+  
+  padding: 8px 13px 8px 13px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+        </style>
+        
+        
+    </head>
+    <body>
+        <form action="login.php" method="POST">
+            <table border="0">
+                <tr>
+                    <td height="250"></td>
+                    <td></td>
+                    <td width="155"></td>
+                    <td width="255" ><p id="p1" style="font: 18px Times New Roman"></p></td>
+                </tr>
+                <tr>
+                    <td width="250">
+                        
+                    </td>
+                    <td>
+            <table border="0" cellspacing="20" >
+        
+                <tr><td><p class="button2">username</p></td><td><input type="text"  name="username"></td></tr>
+                <tr><td><p class="button2">password</p></td><td><input type="password"  name="password"></td></tr>
+            
+                <tr><td colspan="2" style="text-align:center"><input type="submit" class="button3" value="Login"></td></tr>
+            </table>
+                    </td>
+            </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            input[type=submit] {
+    width: 7em;  height: 3em;
+    font: bold 15px Arial;
+}
+body  {
+    background-image: url("1.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:400px 600px;
+}
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 12px 15px 12px 15px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+    </head>
+    <body>
+        <form action="checksymp.php" method='POST'>
+        <table border="0" align="left" width="px">
+            <tr>
+                <td width="460px">
+                    <table border="0">
+                        <tr>
+                            <td height="50px">
+                                <p style="font:italic 20px New Times Roman;">Please Select The Region Where You are Suffering</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="380px" style="vertical-align:bottom">
+                                <a href="userprof.php" class="button">back</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    
+                
+            
+        
+        <table align="center" width="500px" border="0">
+            <col width="33.3%">
+            <col width="33.3%">
+            <col width="33.3%">
+            <tr>
+                <td height="50"></td>
+                <td></td>
+                <td style="text-align: right"><input type="checkbox" name="parts[]" value="head">  The Head Region</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="parts[]" value="arms">The Arms </td>
+                <td></td>
+                <td height="200" style="text-align: right"><input type="checkbox" name="parts[]" value="chest">  Neck To Abdomen</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td height="198" style="text-align: center"><input type="checkbox" name="parts[]" value="legs">  The legs</td>
+            </tr>
+        </table>
+                </td>
+                <td style="vertical-align:bottom " >         <input type="submit" value="next"></td>
+        </tr>
+        </table>
+            </form>
+    </body>
+</html>

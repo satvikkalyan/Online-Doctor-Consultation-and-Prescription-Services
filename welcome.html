@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                var x="Login to start using features of our site";
+                document.getElementById("p1").innerHTML=x;
+            }
+            function f2()
+            {
+                var x="Signup to access features of our site";
+                document.getElementById("p1").innerHTML=x;
+            }
+              function f3()
+            {
+                var x="Please Login or Signup ";
+                document.getElementById("p1").innerHTML=x;
+            }
+            
+        </script>
+       <style>
+body  {
+    background-image: url("welcome.jpg");
+    background-color: white;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size:1400px 600px;
+}
+.button2 {
+  font: bold 18px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  
+  padding: 12px 20px 12px 20px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+        <title>Welcome page</title>
+    </head>
+    <body>
+        <p style="text-align:center;font: bold italic 35px Times New Roman;color: gold">Online Doc</p>
+        <table >
+            <tr><td width="400" height="100"></td>
+                <td width="360" ></td>
+                <td width="400" ><p id="p1" style="font: bold 18px Arial">Welcome to Online Doc</p></td></tr>
+            <tr>
+                <td height="200" style="text-align:center">
+                    <a href="login.html" onmouseover="f1()" onmouseout="f3()" class="button2">Log In </a>
+                </td>
+            </tr>
+            <tr>
+                <td height="100" style="text-align:center">
+                    <a href="register.html" onmouseover="f2()" onmouseout="f3()" class="button2">Sign Up</a>
+                </td>
+            </tr>
+                
+            
+            
+        </table>
+    </body>
+</html>

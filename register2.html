@@ -1,0 +1,232 @@
+<html>
+    <script>
+        function clr()
+ {
+     document.getElementById("name").style.background="cyan";
+ }
+ function any()
+ {
+     document.getElementById("name").style.background="white";
+ }
+ function baby()
+ {
+     document.getElementById("email").style.background="white";
+ }
+ function hll()
+ {
+     document.getElementById("phno").style.background="white";
+ }
+ function wht()
+ {
+     document.getElementById("pss").style.background="white";
+ }
+ function cwht()
+ {
+     document.getElementById("cpss").style.background="white";
+ }
+  function hl()
+ {
+     
+     document.getElementById("email").style.background="white";
+        var p=/^[a-z,0-9]{1,}\@[a-z]{1,}\.[a-z]{1,}$/;
+        var s=document.getElementById("email").value;
+     if(!s.match(p))
+     {
+         document.getElementById("em").innerHTML="<img src='wrong.jpg' height='20px' width='20px'/>";
+         document.getElementById("email").value="";
+         var x="Oops!Looks like you entered an invalid email";
+                document.getElementById("p1").innerHTML=x;
+     }
+     else
+     {
+         document.getElementById("em").innerHTML="<img src='tick.jpg' height='20px' width='20px'/>";
+         var x="Looks Good!";
+                document.getElementById("p1").innerHTML=x;
+     }
+     //document.getElementById("phno").style.background="cyan";
+ }
+ function clr2()
+ {
+     document.getElementById("phno").style.background="white";
+     var x=document.getElementById("phno").value;
+     var y=/^[6-9]{1}[0-9]{9}$/;
+     if(!(x.match(y)))
+     {
+          document.getElementById("phno").value="";
+          document.getElementById("mn").innerHTML="<img src='wrong.jpg' height='20px' width='20px'/>";
+          var x="Oops!Looks like you entered an invalid phone number";
+                document.getElementById("p1").innerHTML=x;
+     }
+     else
+     {
+         document.getElementById("mn").innerHTML="<img src='tick.jpg' height='20px' width='20px'/>";
+         var x="Looks Good!";
+                document.getElementById("p1").innerHTML=x;
+     }
+    // document.getElementById("pss").style.background="cyan";
+ }
+ function clr1()
+ {
+      var s=/^[^0-9]{1,}$/;
+     document.getElementById("name").value=document.getElementById("name").value.toUpperCase();
+     document.getElementById("name").style.background="white";
+     if(!document.getElementById("name").value.match(s))
+     {
+        document.getElementById("na").innerHTML="<img src='wrong.jpg' height='20px' width='20px'/>";
+        document.getElementById("name").value=" ";
+        var x="Oops!Looks like you entered an invalid name";
+                document.getElementById("p1").innerHTML=x;
+     }
+     else 
+     {
+         document.getElementById("na").innerHTML="<img src='tick.jpg' height='20px' width='20px'/>";
+     }
+     //document.getElementById("email").style.background="cyan";
+ }
+ function cclr2()
+ {
+     document.getElementById("pss").style.background="white";
+        document.getElementById("cpss").style.background="cyan";
+ }
+ function cwht()
+ {
+     var x=document.getElementById("pss").value;
+     var y=document.getElementById("cpss").value;
+     if(!(x.match(y)))
+     {
+        document.getElementById("cp").innerHTML="<img src='wrong.jpg' height='20px' width='20px'/>";
+        document.getElementById("cpss").value="";
+        var x="Oops!The Passwords didnt match.";
+                document.getElementById("p1").innerHTML=x;
+        
+     }
+     else
+     {
+         document.getElementById("cp").innerHTML="<img src='tick.jpg' height='20px' width='20px'/>";
+     }
+    //document.getElementById("cpss").style.background="white";
+ }
+        </script>
+        <style>
+            body  {
+    background-image: url("welcome.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:1400px 600px;
+}
+.button2{
+  font: bold 12px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+        </style>
+<body>
+ 
+<form action="register.php" method="POST">
+    <h1 style="text-align:center;color:yellowgreen">REGISTRATION FORM</h1>
+<table border="0">
+    <tr>
+        <td>
+<table  border="0" cellspacing="13">
+<tr>
+<td>
+    <p class="button2">NAME:</p>
+</td>
+<td>
+<input type="text" name="name" id="name"  onfocus="clr()" onblur="any()" required>
+</td>
+<td width="50">
+<p id="na"></p></td>
+</tr>
+<tr>
+    <td>
+        <p class="button2">EMAIL:</p>
+    </td>
+    <td>
+        <input type="text" name="email" id="email" onfocus="clr1()" onblur="baby()" required></td>
+        <td><p id="em"></p></td>
+    
+</tr>
+<tr>
+<td>
+    <p class="button2">MOBILE NO:</p>
+</td>
+<td>
+<input type="text" name="phno" id="phno" onfocus="hl()" onblur="hll()" required>
+</td>
+<td><p id="mn"></p></td>
+</tr>
+    <tr>
+<td>
+    <p class="button2">PASSWORD:</p>
+</td>
+<td>
+<input type="password" name="pss" id="pss" onfocus="clr2()" onblur="wht()" required>
+</td>
+</tr>
+<tr>
+<td>
+    <p class="button2">CONFIRM PASSWORD:</p>
+</td>
+<td>
+<input type="password" name="cpss" id="cpss" onfocus="cclr2()" onblur="cwht()" required>
+</td>
+<td><p id="cp"></p></td>
+</tr>
+<tr>
+<td>
+    <p class="button2">GENDER:</p>
+</td>
+<td>
+    <input type="radio" value="MALE" name="gender" required>MALE<br>
+<input type="radio" value="FEMALE" name="gender" required>FEMALE<br>
+</td>
+</tr>
+<tr>
+    <td><p class="button2">LOCATION</p></td>
+        <td><select id="location" name="location" required>
+	<option id="location" name="location" value="hyderabad">HYDERABAD</option>
+	<option id="location" name="location" value="vizag">VIZAG</option>
+	<option id="location" name="location" value="warangal">WARANGAL</option>
+</select></td>
+    
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">
+<input type="submit" value="Next" >
+</td>
+</tr>
+</table>
+        </td>
+        <td width="305">
+            
+        </td>
+        <td width="350">
+            <table border="0">
+                <tr>
+                    <td height="110">
+                        <p id="p1" style="font: bold 18px Arial">Please chose another Name.That username is already taken</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="210">
+                        
+                    </td>
+                </tr>
+                
+                
+                </table>
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
